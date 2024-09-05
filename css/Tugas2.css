@@ -1,0 +1,179 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.main__1__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7e7cd;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.operation__container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation__container button {
+    margin: 10px;
+    width: 0;
+    height: 0;
+    outline: 0;
+    border: 0;
+    padding: 20px 40px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.operation__container button {
+    color: #f7e7cfcc;;
+}
+
+#button__1 {
+    background-color: #fcaf7a;
+}
+
+#button__2 {
+    background-color: #fa9d57;
+}
+
+#button__3 {
+    background-color: #e77951;
+}
+
+#button__4 {
+    background-color: #ad4a3e;
+}
+
+.button__container {
+    width: 700px;
+    height: 275px;
+    min-height: 275px;
+    background-image: linear-gradient(to right, #f79f57, #fab37f);
+    border-radius: 137.5px;
+}
+
+.btn__1, 
+.btn__2 {
+    margin: 0 15px;
+    padding: 100px;
+    width: 0;
+    height: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.45rem;
+}
+
+.btn__1,
+.btn__2, 
+.button__container,
+.main__1__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__1,
+.btn__2, 
+.button__container {
+    box-shadow: 0 10px 10px #6e3830, 0 15px 15px #ed8254, 0 5px 5px #604149;
+}
+
+.btn__1 {
+    background-color: #fab37f;
+}
+
+.btn__2 {
+    background-color: #f79f57;
+}
+
+.btn__1:active, 
+.btn__2:active,
+button.active {
+    box-shadow: inset 0 10px 10px #784544, 0 10px 10px #e6754f, 0 15px 15px #fa9d57;
+    transform: translateY(10px);
+}
+
+#button__1, #button__2, #button__3, #button__4 {
+    box-shadow: 0 5px 5px #d07047, 0 10px 10px #653934, 0 15px 15px #ed8254;
+}
+
+#button__1:hover, #button__2:hover, #button__3:hover, #button__4:hover {
+    box-shadow: 0 5px 5px #d07047, 0 10px 10px #653934, 0 15px 15px #ed8254;
+    transform: translateY(3px);
+}
+
+.math__container, .acre__container {
+    width: 700px;
+    height: 400px;
+    background-image: linear-gradient(#a6b7ad, #1e4c5b, #1e4c5b);
+    box-shadow: 0 10px 10px #1c363f, 0 15px 15px #6f99a7, 0 5px 5px #a6b7ad;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.math__container h1, .acre__container h1 {
+    padding: 25px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.math__container input, .acre__container input {
+    padding: 20px;
+    margin: 8px;
+    width: 60%;
+    height: 12%;
+    border: 2px solid #17343a;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #ac4a3e, #ed8254, #f79f57);
+    box-shadow: 0 3px 5px #604149, 0 5px 10px #b34d3e, 0 8px 15px #ed8254;
+
+    color: #f7e7cf;
+    appearance: none;
+}
+
+.math__container input::placeholder, .acre__container input::placeholder {
+    font-size: 15px;
+    color: #f7e7cfcc;
+}
+
+.math__container input:focus, .acre__container input:focus {
+    transform: translateY(-3px);
+}
+
+#value__2 {
+    width: 200px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+    display: flex;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
